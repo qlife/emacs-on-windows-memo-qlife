@@ -47,13 +47,13 @@ I failed to setting up with _ispell_.
 
 However, on the windows platform _aspell_ is very easy to install. You may find windows port of aspell and dictionaries by http://aspell.net/.
 Add the location of _aspell.exe_ into your PATH environment variables, and put the following lines into your .emacs file.
-```Common Lisp
-;; ispell comes before auctex always
 
-(setq ispell-program-name "aspell")
-(setq ispell-list-command "list")
-(setq ispell-extra-args '("--sug-mode=ultra"))
-```
+    ;; ispell comes before auctex always
+
+    (setq ispell-program-name "aspell")
+    (setq ispell-list-command "list")
+    (setq ispell-extra-args '("--sug-mode=ultra"))
+
 
 You may use _flyspell-mode_ to interactive to spell checkers. 
 When flyspell-mode is enable, misspelling words are marked as red and underline. 
