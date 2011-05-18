@@ -49,17 +49,9 @@ However, on the windows platform _aspell_ is very easy to install. You may find 
 Add the location of _aspell.exe_ into your PATH environment variables, and put the following lines into your .emacs file.
 
     ;; ispell comes before auctex always
-<<<<<<< HEAD
     (setq ispell-program-name "aspell")
     (setq ispell-list-command "list")
     (setq ispell-extra-args '("--sug-mode=ultra"))
-=======
-
-    (setq ispell-program-name "aspell")
-    (setq ispell-list-command "list")
-    (setq ispell-extra-args '("--sug-mode=ultra"))
-
->>>>>>> 428798f5e6d5fb42aa4c4b504ae66b004999e214
 
 You may use _flyspell-mode_ to interactive to spell checkers. 
 When flyspell-mode is enable, misspelling words are marked as red and underline. 
