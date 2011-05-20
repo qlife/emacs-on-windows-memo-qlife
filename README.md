@@ -48,6 +48,14 @@ I always put my own lisp directory under `.emacs.d/` (but may not be the most co
 
 And put any elisp I like under the `.emacs.d\site-lisp` directory.
 
+To let emacs load your plug-ins, adding following lines in your .emacs files:
+
+    (let ((default-directory "~/.emacs.d/site-lisp"))
+      (normal-top-level-add-to-load-path '("."))
+      (normal-top-level-add-subdirs-to-load-path))
+
+So this is going to tell emacs loading every `*.el` and `*.elc` under the directory `~/emacs.d/site-lisp/` and its sub directory.
+
 Spelling Checking
 ----
 
@@ -68,7 +76,17 @@ Use the keystrokes <b>M-$</b> to obtain suggested correction.
 color-theme
 ----
 
+You may download the archive of color-theme at http://www.nongnu.org/color-theme/.
+Extract every files in the archive to your local elisp directory and put the following lines into your .emacs file:
 
+    (require 'color-theme)
+    (color-theme-initialize)
+    (setq color-theme-is-global t)
+    (color-theme-blue-mood)         ;; Replace this line as the start function of your favorite theme.
+
+* Press <b>M-x</b> `color-theme-select` and there carry out a new window will a listing of all available color themes.
+* Press <b>RET</b> on the name of theme will apply the theme immediately.
+* Press <b>d</b> on the name of theme will give some useful description. It also list the start function to bring out the theme.
 
 auctex
 ----
