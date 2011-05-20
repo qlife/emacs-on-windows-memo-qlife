@@ -42,10 +42,16 @@ It is suggested to maintain oneself emacs plug-in under the directory `emacs.d/`
 By doing so it is easy to keep the plug-in up-to-date or hold on particular version. 
 However, under windows platform one can only arrange elisp files under `emacs.d/`. 
 
+I always put my own lisp directory under `.emacs.d/` (but may not be the most correct one).
+
+    C:\...\Application Data\.emacs.d\> mkdir site-lisp
+
+And put any elisp I like under the `.emacs.d\site-lisp` directory.
+
 Spelling Checking
 ----
 
-I failed to setting up with _ispell_.
+I can't figure out why can't I set up __ispell__. So I turn to __aspell__.
 
 However, on the windows platform _aspell_ is very easy to install. You may find windows port of aspell and dictionaries by http://aspell.net/.
 Add the location of _aspell.exe_ into your PATH environment variables, and put the following lines into your .emacs file.
@@ -61,6 +67,8 @@ Use the keystrokes <b>M-$</b> to obtain suggested correction.
 
 color-theme
 ----
+
+
 
 auctex
 ----
