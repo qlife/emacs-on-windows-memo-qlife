@@ -91,8 +91,6 @@ Extract every files in the archive to your local elisp directory and put the fol
 auctex
 ----
 
-
-
 slime
 ----
 
