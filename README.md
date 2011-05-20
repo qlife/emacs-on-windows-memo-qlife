@@ -38,7 +38,9 @@ c:\> type c:\.emacs
 The DOTemacs.d directory
 ----
 
-Suggest maintain your elisp plugins _locally_ .
+It is suggested to maintain oneself emacs plug-in under the directory `emacs.d/`, usually located under the HOME directory.
+By doing so it is easy to keep the plug-in up-to-date or hold on particular version. 
+However, under windows platform one can only arrange elisp files under `emacs.d/`. 
 
 Spelling Checking
 ----
