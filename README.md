@@ -100,12 +100,12 @@ auctex
 ----
 
 __SumatraPDF__ don't lock the viewing pdf files so it is possible to compile while SumatraPDF is viewing the desired output file. 
-Adobe Reader lacks this important features thus coppes badly with aucTeX.
 
   ;; TODO: To add *.dvi and *.gs program
   (setq TeX-view-program-list '(("SumatraPDF" "c:/SumatraPDF/SumatraPDF.exe %o"))) ;; Change to the real path of SumatraPDF in your environment.
   (setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
 
+Adobe Reader lacks this important features thus coppes badly with aucTeX.
   
 
 slime
