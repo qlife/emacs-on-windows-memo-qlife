@@ -88,6 +88,14 @@ Extract every files in the archive to your local elisp directory and put the fol
 * Press <b>RET</b> on the name of theme will apply the theme immediately.
 * Press <b>d</b> on the name of theme will give some useful description. It also list the start function to bring out the theme.
 
+TABs
+----
+I am used to expand tabs into white spaces.
+
+  `<b>M-x customize-variables <b>RET</b> indent-tabs-mode` and set it to `nil`.
+
+One may use `<b>M-x</b> untabify` to expand the tabs into white spaces.
+
 auctex
 ----
 
