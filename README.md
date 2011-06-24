@@ -1,12 +1,14 @@
 Emacsw32 usage memo
 ===================
 
-I have taste Emacs on windows for awhile. I googled around and put everything I found here, to make this task easier.
-I've tried my best to record any sources; however it is always something missed, please pointed out my errors.
+I have tried Emacs on windows for awhile. I search around the Internet
+and put everything I found here, to make this task easier.
+I've tried my best to record every source of data; however it is
+always something missed and  please pointed out my errors.
 
 The distribution used is the Emacsw32.
 
-For copyright see COPYING(WTFPL) in the same repository or just do anything you want to do.
+For copyright see COPYING(WTFPL) in the source repository or just do anything you want to do.
 
 [Emacsw32](http://ourcomments.org/Emacs/EmacsW32.html) is a great package for those who want test Emacs on windows platform.
 The package itself comes with some missed command line utilities, this is much convenient.
@@ -23,9 +25,10 @@ to place the .emacs file.
 >4.    If `C:\.emacs` exists, then use `C:/`. This is for backward compatibility, as previous versions defaulted to C:/ if HOME was not set.
 >5.    Use the user's AppData directory, usually a directory called Application Data under the user's profile directory, the location of which varies according to Windows version and whether the computer is part of a domain. 
 
-I choose using AppData folder because I'm using a sharing-computer. I think HOME variables is a reasonable choice for those who are also using MinGW.
+I choose to use AppData folder because I'm using a sharing-computer. I think HOME variables is a reasonable choice for those who are also using MinGW.
 
-The .emacs file is the configuration file for Emacs. The name convention is UNIX style. However, it is not possible to create a file name starting by a dot by Windows File Explorer. This seems a FEATURE of it.
+The .emacs file is the configuration file for Emacs. The prefix of
+``.'' demonstrate the UNIX-style naming  convention. However, it is not possible to create a file name starting by a dot by Windows File Explorer. This seems a FEATURE of it.
 I suggest create it by command line. For example, to create a DOTEmacs file under `C:\`, press the *Windows Start* button and do `Run ... > cmd.exe`. Then type into the command prompt:
 ```
 c:\> echo ; nothing > c:\.emacs
@@ -84,8 +87,8 @@ Extract every files in the archive to your local elisp directory and put the fol
     (setq color-theme-is-global t)
     (color-theme-blue-mood)         ;; Replace this line as the start function of your favorite theme.
 
-* Press <b>M-x</b> `color-theme-select` and there carry out a new window will a listing of all available color themes.
-* Press <b>RET</b> on the name of theme will apply the theme immediately.
+* Press <b>M-x</b> `color-theme-select` and it will carry out a new window will a listing of all available color themes.
+* Press <b>RET</b> on the name of themes then the selected theme is * applied  immediately.
 * Press <b>d</b> on the name of theme will give some useful description. It also list the start function to bring out the theme.
 
 TABs
@@ -114,6 +117,10 @@ C/C++ programming with MinGW
 
 Backup file
 ----
+
+Haskell-mode
+----
+Just search for ``haskell-mode``
 
 References
 ----
