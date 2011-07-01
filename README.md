@@ -29,7 +29,7 @@ I choose to use AppData folder because I'm using a sharing-computer. I think HOM
 
 The .emacs file is the configuration file for Emacs. The prefix of
 
-``.'' 
+``.`` 
 
 demonstrate the UNIX-style naming  convention. However, it is not possible to create a file name starting by a dot by Windows File Explorer. This seems a FEATURE of it.
 I suggest create it by command line. For example, to create a DOTEmacs file under `C:\`, press the *Windows Start* button and do `Run ... > cmd.exe`. Then type into the command prompt:
