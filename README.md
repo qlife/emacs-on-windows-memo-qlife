@@ -11,7 +11,7 @@ The distribution used is the Emacsw32.
 For copyright see COPYING(WTFPL) in the source repository or just do anything you want to do.
 
 [Emacsw32](http://ourcomments.org/Emacs/EmacsW32.html) is a great package for those who want to test Emacs on windows platform.
-The package itself comes with some command line utilities missed on windows platfroms.
+The package itself comes with some command line utilities missed on windows platforms.
 
 The DOTemacs file
 ----
@@ -156,6 +156,14 @@ I list my settings of haskell-mode here. It mostly comes from the example setup 
 ;; REPL of Haskell. 
 (require 'inf-haskell)
 ```
+
+Emacs-style key strokes in Other IDEs
+----
+
+It is possible to edit like in Emacs in other IDEs. This may make programming in cumbersome IDEs more comfortable. Check the following sites.
+
+* http://marketplace.eclipse.org/node/886
+* http://blogs.msdn.com/b/visualstudio/archive/2010/09/01/emacs-emulation-extension-now-available.aspx
 
 References
 ----
