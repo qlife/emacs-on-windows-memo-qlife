@@ -126,9 +126,6 @@ __SumatraPDF__ don't lock the viewing pdf files so it is possible to compile whi
 
 Adobe Reader lacks this important features thus coppes badly with aucTeX.
   
-C/C++ programming with MinGW
-----
-
 Haskell-mode
 ----
 Just search for ``haskell-mode``
