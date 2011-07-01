@@ -10,7 +10,7 @@ The distribution used is the Emacsw32.
 
 For copyright see COPYING(WTFPL) in the source repository or just do anything you want to do.
 
-[Emacsw32](http://ourcomments.org/Emacs/EmacsW32.html) is a great package for those who want test Emacs on windows platform.
+[Emacsw32](http://ourcomments.org/Emacs/EmacsW32.html) is a great package for those who want to test Emacs on windows platform.
 The package itself comes with some missed command line utilities, this is much convenient.
 
 The DOTemacs file
@@ -28,12 +28,18 @@ to place the .emacs file.
 I choose to use AppData folder because I'm using a sharing-computer. I think HOME variables is a reasonable choice for those who are also using MinGW.
 
 The .emacs file is the configuration file for Emacs. The prefix of
-``.'' demonstrate the UNIX-style naming  convention. However, it is not possible to create a file name starting by a dot by Windows File Explorer. This seems a FEATURE of it.
+
+``.'' 
+
+demonstrate the UNIX-style naming  convention. However, it is not possible to create a file name starting by a dot by Windows File Explorer. This seems a FEATURE of it.
 I suggest create it by command line. For example, to create a DOTEmacs file under `C:\`, press the *Windows Start* button and do `Run ... > cmd.exe`. Then type into the command prompt:
+
 ```
 c:\> echo ; nothing > c:\.emacs
 ```
+
 You may check the file content by windows command `type`:
+
 ```
 c:\> type c:\.emacs
 ```
