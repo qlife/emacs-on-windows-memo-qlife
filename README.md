@@ -160,7 +160,7 @@ I list my settings of haskell-mode here. It mostly comes from the example setup 
 Emacs-style key strokes in Other IDEs
 ----
 
-It is possible to edit like in Emacs in other IDEs. This may make programming in cumbersome IDEs more comfortable. Check the following sites.
+It is possible to edit like if you are in Emacs in other IDEs. This may make programming in cumbersome IDEs more comfortable. Check the following sites.
 
 * http://marketplace.eclipse.org/node/886
 * http://blogs.msdn.com/b/visualstudio/archive/2010/09/01/emacs-emulation-extension-now-available.aspx
