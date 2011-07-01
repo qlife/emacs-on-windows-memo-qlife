@@ -98,7 +98,7 @@ Extract every files in the archive to your local elisp directory and put the fol
 * Press <b>RET</b> on the name of themes then the selected theme is * applied  immediately.
 * Press <b>d</b> on the name of theme will give some useful description. It also list the start function to bring out the theme.
 
-line-number
+Line numbers
 ----
 
 The `line-number-mode` reports the currently line-number on the status bar only. 
