@@ -98,6 +98,18 @@ Extract every files in the archive to your local elisp directory and put the fol
 * Press <b>RET</b> on the name of themes then the selected theme is * applied  immediately.
 * Press <b>d</b> on the name of theme will give some useful description. It also list the start function to bring out the theme.
 
+line-number
+----
+
+The `line-number-mode` reports the currently line-number on the status bar only. 
+Who is seeking for line numbers on the side of editor area should check the `linum-mode`.
+
+Syntax-hightlight
+----
+
+The syntax-highlight mode in Emacs has neither "syntax" nor "highlight" in its name.
+It is the minor mode ``font-lock-mode`` giving syntax highlights in Emacs. 
+
 TABs
 ----
 I am used to expand tabs into white spaces.  M-x customize-variables <b>RET</b> indent-tabs-mode and set it to `nil`.
@@ -108,26 +120,45 @@ auctex
 
 __SumatraPDF__ don't lock the viewing pdf files so it is possible to compile while SumatraPDF is viewing the desired output file. 
 
-    ;; TODO: To add *.dvi and *.gs program
     ;; Change to the real path of SumatraPDF in your environment.
     (setq TeX-view-program-list '(("SumatraPDF" "c:/SumatraPDF/SumatraPDF.exe %o"))) 
     (setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
 
 Adobe Reader lacks this important features thus coppes badly with aucTeX.
   
-
-slime
-----
-
 C/C++ programming with MinGW
-----
-
-Backup file
 ----
 
 Haskell-mode
 ----
 Just search for ``haskell-mode``
+I list my settings of haskell-mode here. It mostly comes from the example setup provided in the haskell-mode wiki page.
+
+```
+(load "~/.emacs.d/site-lisp/haskell-mode/haskell-site-file")
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
+;; If ghci is not under usual position.
+;;(setq haskell-program-name "/some/where/ghci.exe")
+;;  (setq haskell-program-name
+;;        (if (eq system-type 'cygwin)
+;;            "/cygdrive/c/ghc/ghc-6.8.1/bin/ghcii.sh"
+;;          "c:/ghc/ghc-6.8.1/bin/ghci.exe"))
+
+;; Hook-adding pattern.
+;; Starting font-lock-mode and linum-mode for haskell source files.
+(add-hook 'haskell-mode-hook
+          '(lambda ()
+             (progn
+               (font-lock-mode)
+               (linum-mode))))
+;; REPL of Haskell. 
+(require 'inf-haskell)
+```
 
 References
 ----
